@@ -1,114 +1,164 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Адаптивность под устройства и ширина страницы 100%-->
-  <meta name="description" content="Сайт по увлечениям рукоделию и хобби"><!--Описание сайта-->
-  <link rel="stylesheet" href="Style.css"> <!--Подключалка css файла-->
-  <script src="Auto.js"></script> <!--Подключение JS файлика-->
-  <script src="https://kit.fontawesome.com/ffb1c81c53.js" crossorigin="anonymous"></script>
- <title>Иглогусь</title>
-</head>
-
-<body>
-  <header>
-      <div class="logo"><!--логотип-->
-        <img src="img/logo.png" alt="Лого Иглогуся">
-        Иглогусь
-      </div>
-      <nav class="nav_menu">
-        <ul>
-          <li><a href="Account.html"><i class="fa-regular fa-face-smile-beam"></i>Мой аккаунт</a></li>
-          <li><a href="https://xfloss.ru"><i class="fa-solid fa-pen-to-square"></i>Схемы</a></li>
-          <li><a href="https://www.pinterest.ru"><i class="fa-solid fa-palette"></i>Идеи для творчества</a></li>
-          <li><a href="Menu.html"><i class="fa-solid fa-align-justify"></i></a>
-            <ul>
-              <li><a href="Beading.html">Бисероплетение</a></li>
-              <li><a href="#">Вязание</a></li>
-              <li><a href="#">Алмазная мозаика</a></li>
-              <li><a href="#">Вышивание</a></li>
-              <li><a href="#">Макраме</a></li>
-              <li><a href="#">Картины по номерам</a></li>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Caveat&family=Comforter&family=Comfortaa:wght@300;500;600;700&family=Nunito:wght@500&family=Rubik+Moonrocks&family=EB+Garamond&display=swap" rel="stylesheet" />
+    <title>Сайт</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-wrapper">
+          <a class="nav-login" href="#">Войти</a>
+          <div class="nav-name"></div>
+          <div class="hamburger">
+            <span class="bar" style="background-color: #FFB27B"></span>
+            <span class="bar" style="background-color: #6F4D35"></span>
+            <span class="bar" style="background-color: #20150D"></span>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <div class="nav-column">
+            <div class="nav-header"><a href="#" class="nav-header-link">Бисероплетение</a></div>
+            <ul class="nav-content">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Cхемы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Идеи</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Магазин</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Статьи</a>
+              </li>
             </ul>
-          </li>
-        </ul>
-        </nav>
-  </header>
-  <!--Сам баннер-->
-  <section class="banner">
-    <div class="container_b">
-      <h1>Добро пожаловать к нам!</h1>
-      <h3>Здесь вы найдёте идеи и обретёте вдохновение для себя</h3>
-      <button class="banner_button">Приступить</button> <!--Здесь нужно будет сделать якорь на низ страницы-->
-    </div>
-  </section>
-  <section>
-      <h2>У вас появилось свободное время и в не знаете чем себя увлечь?</h2>
-    <div class="container_b1">
-      <h3>Тогда вы пришли по адресу! На нашем сайте вы сможете найти себе рукоделие по душе.
-          Именно хобби наполняют жизнь смыслом, раскрашивая их яркими красками,  и самое важное в них то, что они делают нашу жизнь насыщенней и увлекательней.
-         Наш список рукодильнических хобби как нельзя лучше подойдет под любые вкусы и желания. Не знаете с чего начать? Мы вам поможем!</h3>
-      <img src="img/pic_1.png" alt="Картинка 1">
-    </div>
-  </section>
-  <section>
-    <div class="container_step">
-      <h3>1. У нас есть виды занятий, такие как алмазная мозаика и бисероплетение. Эти занятия помогают развить и натренировать мелкую моторику.</h3>
-      <img src="img/pic_2.png" alt="Картинка 2">
-      <img src="img/pic_3.png" alt="Картинка 3">
-      <h3>2.Вы можете попробовать вышивку или вязание. Такие виды рукоделия как нельзя лучше успокаивают и расслабляют.</h3>
-      <h3>3. Если ваша душа не лежит к мелким деталям и иголкам - попробуйте картины по номерам или макраме. Такие занятия помогут украсить ваш дом и жизнь! </h3>
-      <img src="img/pic_4.png" alt="Картинка 4">
+          </div>
+          <div class="nav-column">
+            <div class="nav-header"><a href="#" class="nav-header-link">Макраме</a></div>
+            <ul class="nav-content">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Схемы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Идеи</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Магазин</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Статьи</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-column">
+            <div class="nav-header"><a href="#" class="nav-header-link">Вышивание</a></div>
+            <ul class="nav-content">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Схемы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Идеи</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Магазин</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Статьи</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-column">
+            <div class="nav-header"><a href="#" class="nav-header-link">Вязание</a></div>
+            <ul class="nav-content">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Схемы</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Идеи</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Магазин</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Идеи</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <script type="text/javascript" src="./scripts/index.js"></script>
+    <div class="content-wrapper">
+       <div class="content-intro">
+          <h1 class="intro-title">Добро пожаловать</h1>
+          <div class="dash-content">
+                       <div class="dash-first"></div>
+                       <div class="dash-second"></div>
+                       <div class="dash-third"></div>
+          </div>
+          <h2 class="intro-suptitle">Здесь вы найдёте новые идеи и обретёте вдохновение для себя</h2>
+          <button class="intro-button">Подробнее</button>
       </div>
-      <h2>Примеры работ наших гостей:</h2>
-      <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="img/TheFirst.png" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="img/TheSecond.png" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="img/TheThird.png" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img src="img/TheFour.png" style="width:100%">
-    <div class="text">Caption Four</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
-</section>
-
-
-  <!--Это уже подвальная часть-->
-  <footer>
-<h2>Наши соцсети:</h2>
-<img src="img/logo.png" alt="logo">
-  </footer>
-</body>
+      <div class="content-about">
+          <div class="text-about">
+                       <div class="text-decoration"></div>
+                       <h2 class="title-about">У вас появилось свободное время, а вы не знаете, чем себя увлечь?</h2>
+                       <p class="p-about">На нашем сайте вы сможете найти себе рукоделие по душе. <br>
+                        Именно хобби наполняют жизнь смыслом, раскрашивая её яркими красками, делая её насыщенней и увлекательной. <br> Наш перечень рукодельных хобби как нельзя лучше подойдет под любые вкусы и желания. <br> Не знаете, с чего начать? Мы вам поможем!
+                       </p>
+          </div>
+          <div class="image-about">
+                       <div class="image-about-self"></div>
+          </div>
+       </div>
+       <div class="content-image"></div>
+       <div class="content-explanation">
+          <div class="explanation-wrapper">
+           <div class="expl-first-column">
+             <p id="expl-p-1" class="expl-p">1. У нас есть такой вид занятия, как бисероплетение, помогающее развить и натренировать мелкую моторику.</p>
+             <img class="expl-image" src="./assets/images/expl-first-image.jpg">
+           </div>
+           <div class="expl-second-column">
+             <img class="expl-image" src="./assets/images/expl-second-image.jpg">
+             <p id="expl-p-2" class="expl-p"> 2. Вы можете попробовать вышивку или вязание. Такие виды рукоделия как нельзя лучше успокаивают и расслабляют.</p>
+           </div>
+           <div class="expl-third-column">
+             <p id="expl-p-3" class="expl-p"> 3. Если ваша душа не лежит к мелким деталям и иголкам, попробуйте макраме. Такое занятие поможет украсить ваш дом и жизнь!</p>
+             <img class="expl-image" src="./assets/images/expl-third-image.jpg">
+           </div>   
+          </div>
+       </div>     
+       <div class="content-sections">
+          <span id="sections-title">Работы наших гостей:</span>
+          <div id="sections-wrapper">
+            <div id="section-1"><span class="sections-text"><a href ="#">бисероплетение</a></span></div>
+            <div id="section-2"><span class="sections-text"><a href ="#">макраме</a></span></div>
+            <div id="section-3"><span class="sections-text"><a href ="#">вышивание</a></span></div>
+            <div id="section-4"><span class="sections-text"><a href ="#">вязание</a></span></div>
+          </div>
+       </div>
+       <footer>
+        <div class="footer-upper">
+          <h2 class="footer-text" id="footer-title">Начните творить прямо сейчас</h2>
+          <img src="./assets/images/Logo-2.svg" id="footer-logo" width="200px" height="50px"></img>
+          <div class="social-media">
+            <a href="#"><img src="./assets/images/facebook.png" width="30px" height="30px"></a>
+            <a href="#"><img src="./assets/images/pinterest.png" width="30px" height="30px"></a>
+            <a href="#"><img src="./assets/images/instagram.png" width="30px" height="30px"></a>
+            <a href="#"><img src="./assets/images/youtube.png" width="30px" height="30px"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <a href="#" class="text-footer-bottom">Поддержать нас</a>
+          <a href="#" class="text-footer-bottom">Политика безопасности</a>
+        </div>
+       </footer>
+    </div>
+  </body>
 </html>
