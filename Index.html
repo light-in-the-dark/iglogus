@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Caveat&family=Comforter&family=Comfortaa:wght@300;500;600;700&family=Nunito:wght@500&family=Rubik+Moonrocks&family=EB+Garamond&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Caveat&family=Comforter&family=Comfortaa:wght@300;500;600;700&family=Nunito:wght@500&family=Rubik+Moonrocks&family=EB+Garamond&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="css/indexStyle.css" />
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="tab icon" href="assets/images/favicon.ico" type="image/x-con">
 
   <script src="scripts/modernizr.js"></script> <!-- Modernizr -->
+  <script type="text/javascript" src="scripts/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -19,15 +22,14 @@
 </head>
 
 <body>
-  <!--Navigation bar-->
-  <div id="placeholder-nav"></div>
+  <div id="nav-ph">
 
+  </div>
   <script>
-    $(function () {
-      $('#placeholder-nav').load("parts/nav-part.html");
+    $(function () { 
+      $('#nav-ph').load('parts/nav-part.html'); 
     });
   </script>
-  <!--end of Navigation bar-->
   <div class="content-wrapper">
     <div class="content-intro">
       <h1 class="intro-title">Добро пожаловать</h1>
@@ -199,7 +201,6 @@
   </div> <!-- cd-user-modal -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/index.js"></script>
   <script type="text/javascript" src="scripts/modal.js"></script>
 </body>
 
