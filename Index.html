@@ -10,11 +10,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Caveat&family=Comforter&family=Comfortaa:wght@300;500;600;700&family=Nunito:wght@500&family=Rubik+Moonrocks&family=EB+Garamond&display=swap"
     rel="stylesheet" />
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="tab icon" href="assets/images/favicon.ico" type="image/x-con">
+  <script src="scripts/modernizr.js"></script> <!-- Modernizr -->
+
   <title>Иглогусь</title>
 </head>
 
@@ -22,7 +21,7 @@
   <header class="header">
     <nav class="navbar">
       <div class="nav-wrapper">
-        <a class="nav-login" href="pages/Account.html">Аккаунт</a>
+        <li><a class="nav-login" href="#0">Аккаунт</a></li>
         <div class="nav-name"></div>
         <div class="hamburger">
           <span class="bar" style="background-color: #FFB27B"></span>
@@ -103,12 +102,7 @@
     </nav>
   </header>
 
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="scripts/base.js"></script>
   <div class="content-wrapper">
     <div class="content-intro">
       <h1 class="intro-title">Добро пожаловать</h1>
@@ -184,9 +178,97 @@
     </footer>
   </div>
 
-  
-  <script src="plugins/modal.js"></script>
+  <div class="cd-user-modal"> <!-- все формы на фоне затемнения-->
+		<div class="cd-user-modal-container"> <!-- основной контейнер -->
+			<ul class="cd-switcher">
+				<li><a href="#0">Вход</a></li>
+				<li><a href="#0">Регистрация</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- форма входа -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Пароль</label>
+						<input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Пароль">
+						<a href="#0" class="hide-password">Показать</a>
+						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="remember-me" checked>
+						<label for="remember-me">Запомнить меня</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" type="submit" value="Войти">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">Забыли пароль?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- форма регистрации -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Имя пользователя</label>
+						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя пользователя">
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Пароль</label>
+						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Пароль">
+						<a href="#0" class="hide-password">Показать</a>
+					</p>
+
+					<p class="fieldset">
+						<input type="checkbox" id="accept-terms">
+						<label for="accept-terms">Я согласен с <a href="#0">Условиями</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Создать аккаунт">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- форма восстановления пароля -->
+				<p class="cd-form-message">Забыли пароль? Пожалуйста, введите адрес своей электронной почты. Вы получите ссылку, чтобы создать новый пароль.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-error-message">Здесь сообщение об ошибке!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" type="submit" value="Восстановить пароль">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Вернуться к входу</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Закрыть</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/index.js"></script>
+  <script type="text/javascript" src="scripts/modal.js"></script>
 </body>
 
 </html>
