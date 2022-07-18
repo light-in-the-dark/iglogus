@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Caveat&family=Comforter&family=Comfortaa:wght@300;500;600;700&family=Nunito:wght@500&family=Rubik+Moonrocks&family=EB+Garamond&display=swap" rel="stylesheet" />
+ <title>Иглогусь</title>
+ <style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+header {
+background-color: #fffcf0;
+position: relative;
+z-index: 2;
+}   
+li {
+list-style: none;
+}
+a {
+    color: #251D16;
+    text-decoration: none;
+}
+.navbar {
+    position: relative;
+    height: 60px;
+ 
+}
+.nav-wrapper {
+    padding: 0 30px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+.nav-menu {
+    position: fixed;
+    Top: -100%;
+    left: 0px;
+    gap: 0;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    height: 45vh;
+    padding-top: 40px;
+}
+.nav-item {
+    margin: 30px 0;
+}
+.nav-menu.active {
+    Top: 60px;
+    left: 0px;
+}
+.nav-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid  #20150D;
+    font-family: 'Comfortaa';
+    font-size: 25px;;
+}
+.nav-header-link:hover {
+    color: #ad7852;
+    transition: 0.7s ease;
+}
+.nav-header-link {
+    color:#20150D;
+}
+.nav-login {
+    position: relative;
+    display: block;
+    font-family: 'Comfortaa';
+    font-size: 22px;
+    transition: 1s ease;
+}
+.nav-login:hover {
+    color:#ffcb8c;
+}
+.nav-name {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    transform:translateX(-50%);
+    background-image: url("./assets/images/Logo.png");
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav-link {
+    font-family: 'Comfortaa';
+    transition: 0.7s ease;
+}
+.nav-link:hover {
+    color: #FFB27B;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.title-content {
+    color: #ffffff;
+    background-image: url("./assets/images/newspapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 20vh;
+    font-family: 'Comfortaa';
+    font-size: 3em;
+    font-weight: 100;
+    padding-top: 3%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    font-family: 'Comfortaa';
+    font-size: 1.4em;
+}
+.content {
+    flex-grow: 1;
+    background-color: #29201A; 
+    position: relative; border-bottom: solid 1px #FFE7D5;
+
+}
+.link {
+    color: #ffffff;
+    position: absolute;
+    padding-top: 1.2%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+    font-weight: 100;
+}
+.link:hover {
+    color:#FFE7D5;
+}
+footer {
+    padding-top: 30px;
+    width: 100%;
+    height: 45vh;
+    background-color: #29201A;
+}
+.footer-upper {
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.footer-text {
+    color: #FFE7D5;
+    text-align: center; 
+    line-height: 2;
+}
+.social-media {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-70%);
+    gap: 3px;
+}
+.footer-upper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: #FFE7D5;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    font-family: 'EB Garamond';
+    font-weight: 100;
+    padding-left: 33%;
+    padding-right: 33%;
+    font-size: 15px;
+}
+
+.text-footer-bottom {
+    color: #FFE7D5;
+    background-color: #251D16;
+}
+#footer-title {
+    font-family: 'Comforter';
+    font-size: 60px;
+}
+#footer-logo {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translateX(-65%);
+}
+ </style>
+</head>
+<body>
+        <header class="header">
+          <nav class="navbar">
+            <div class="nav-wrapper">
+              <a class="nav-login" href="Account.html">Войти</a>
+              <a href="MainPage.html"><div class="nav-name"></div></a>
+              <div class="hamburger">
+                <span class="bar" style="background-color: #FFB27B"></span>
+                <span class="bar" style="background-color: #6F4D35"></span>
+                <span class="bar" style="background-color: #20150D"></span>
+              </div>
+            </div>
+            <div class="nav-menu">
+              <div class="nav-column">
+                <div class="nav-header"><a href="Beading.html" class="nav-header-link">Бисероплетение</a></div>
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="Schemes_beading.html" class="nav-link">Cхемы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Ideas_beading.html" class="nav-link">Идеи</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://leonardo.ru/ishop/tree_1452786462/" class="nav-link">Магазин</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Articles_beading.html" class="nav-link">Статьи</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <div class="nav-header"><a href="Macrame.html" class="nav-header-link">Макраме</a></div>
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="Schemes_macrame.html" class="nav-link">Схемы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Lessons.html" class="nav-link">Видеоуроки</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://leonardo.ru/ishop/tree_1453399262/" class="nav-link">Магазин</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Articles_macrame.html" class="nav-link">Статьи</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <div class="nav-header"><a href="Embroidery.html" class="nav-header-link">Вышивание</a></div>
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="Schemes_embroidery.html" class="nav-link">Схемы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Ideas_embroidery.html" class="nav-link">Идеи</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://leonardo.ru/ishop/tree_1436906062/" class="nav-link">Магазин</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Articles_embroidery.html" class="nav-link">Статьи</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-column">
+                <div class="nav-header"><a href="Knitting.html" class="nav-header-link">Вязание</a></div>
+                <ul class="nav-content">
+                  <li class="nav-item">
+                    <a href="Schemes_knitting.html" class="nav-link">Схемы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Lessons.html" class="nav-link">Видеоуроки</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://leonardo.ru/ishop/tree_1444732062/" class="nav-link">Магазин</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Articles_knitting.html" class="nav-link">Статьи</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <script type="text/javascript" src="./scripts/index.js"></script>
+        <h2 class="title-content">Полезные статьи:</h2>
+        <div class="wrapper">
+          <div class="content"><a class="link" href="https://www.livemaster.ru/topic/1430185-iskusstvo-makrame-istoriya-vozniknoveniya-i-razvitiya">История макраме</a></div>
+          <div class="content"><a class="link" href="https://zen.yandex.ru/media/krasota_rukodelnaya/iskusstvo-makrame-sovety-5e94b612070b1b5ebcc50fe8">Искусство макраме</a></div>
+          <div class="content"><a class="link" href="https://zvetnoe.ru/club/poleznye-stati/makrame-dlya-nachinayushchikh/">Макраме для начинающих</a></div>
+        </div>
+        <footer>
+          <div class="footer-upper">
+            <h2 class="footer-text" id="footer-title">Начните творить прямо сейчас</h2>
+            <img src="./assets/images/Logo-2.png" id="footer-logo" width="200px" height="50px"></img>
+            <div class="social-media">
+              <a href="https://m.facebook.com/login/?locale2=ru_RU"><img src="./assets/images/facebook.png" width="30px" height="30px"></a>
+              <a href="https://www.pinterest.ru/login/"><img src="./assets/images/pinterest.png" width="30px" height="30px"></a>
+              <a href="https://www.instagram.com/accounts/login/"><img src="./assets/images/instagram.png" width="30px" height="30px"></a>
+              <a href="https://www.youtube.com/account"><img src="./assets/images/youtube.png" width="30px" height="30px"></a>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <a href="Support.html" class="text-footer-bottom">Поддержать нас</a>
+            <a href="policy.pdf" class="text-footer-bottom">Политика безопасности</a>
+          </div>
+         </footer>
+        </div>
+        </body>
+        </html>

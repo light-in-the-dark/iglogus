@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+header {
+background-color: #fffcf0;
+position: relative;
+z-index: 2;
+}   
+li {
+list-style: none;
+}
+a {
+    color: #251D16;
+    text-decoration: none;
+}
+.navbar {
+    position: relative;
+    height: 60px;
+ 
+}
+.nav-wrapper {
+    padding: 0 30px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+.nav-menu {
+    position: fixed;
+    Top: -100%;
+    left: 0px;
+    gap: 0;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s;
+    height: 45vh;
+    padding-top: 40px;
+}
+.nav-item {
+    margin: 30px 0;
+}
+.nav-menu.active {
+    Top: 60px;
+    left: 0px;
+}
+.nav-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid  #20150D;
+    font-family: 'Comfortaa';
+    font-size: 25px;;
+}
+.nav-header-link:hover {
+    color: #ad7852;
+    transition: 0.7s ease;
+}
+.nav-header-link {
+    color:#20150D;
+}
+.nav-login {
+    position: relative;
+    display: block;
+    font-family: 'Comfortaa';
+    font-size: 22px;
+    transition: 1s ease;
+}
+.nav-login:hover {
+    color:#ffcb8c;
+}
+.nav-name {
+    position: absolute;
+    top: 10%;
+    left: 49%;
+    transform:translateX(-50%);
+    background-image: url("./assets/images/Logo.png");
+    height: 180px;
+    width: 180px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav-link {
+    font-family: 'Comfortaa';
+    transition: 0.7s ease;
+}
+.nav-link:hover {
+    color: #FFB27B;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro {
+    height: 91.7vh;
+    background-image: url("./assets/images/intro-macrame.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-family: 'Comfortaa';
+}
+#title {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 200;
+    padding-top: 10%;
+    opacity: 0.8
+}
+#title:after {
+    content: "";
+    height: 2px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 42%;
+    background-color: #fff;
+}
+#title-text {
+    font-size: 1.4em;
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    line-height: 2;
+    font-weight: 100;
+}
+.scheme {
+    height: 90vh;
+    position: relative;
+}
+.scheme-upper {
+    height: 45%;
+    background-color: #20150D;
+}
+#scheme-upper-text {
+    color: #fff;
+    font-size: 1.4em;
+    padding-top: 3%;
+    padding-left: 6%;
+    padding-right: 40%;
+    line-height: 2;
+    font-weight: 100;
+    font-family: 'Comfortaa';
+}
+.scheme-image {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    top: 10%; 
+    right: 5%;
+    background-image: url("./assets/images/macrame-scheme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#button-scheme {
+    position: absolute;
+    left: 25%;
+    bottom: 35%;
+}
+.button-content {
+    border-radius: 10px;
+    width: 200px;
+    height: 65px;
+    border-color: #20150D;
+    border: 2px solid;
+    font-family: 'Comfortaa';
+    font-size: 1.2em;
+    color: #20150D;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 1s;
+}
+.button-content:hover {
+    color: #ca8c60;
+    border: 2px solid #ca8c60;
+    cursor: pointer;
+}
+#scheme-text {
+    padding-top: 17.5%;
+    padding-left: 10%;
+    font-family: 'Comfortaa';
+    font-size: 1.4em;
+    color: #20150D;
+  
+}
+.scheme-lower {
+    height: 55%;
+}
+.videos {
+    position: relative;
+    height: 100vh;
+}
+.videos-image-bg {
+    height: 80%;
+    background-image: url("./assets/images/macrame-video.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.videos-image-bg:hover {
+    opacity: 0.8;
+}
+#videos-button {
+    position: absolute;
+    left: 50%;
+    bottom: 6%; 
+    transform:translateX(-50%);
+}
+.titles-and-shop {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+}
+.titles-and-shop-wrapper {
+    display: flex;
+    justify-content: baseline;
+    position: relative;
+}
+#titles-and-shop-text {
+    font-family: 'Comfortaa';
+    color:#20150D;
+    font-size: 1.4em;
+    padding-left: 10%;
+    padding-bottom: 30px;
+}
+.titles {
+    position: relative;
+    height: 70vh;
+    width: 50%;
+    background-image: url("./assets/images/macrame-titles.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shop {
+    position: relative;
+    height: 70vh;
+    width: 50%;
+    background-image: url("./assets/images/macrame-shop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btncntts {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btncntts:hover {
+    color: #a4724f;;
+    border: 2px solid #a4724f;
+    cursor: pointer;
+}
+footer {
+    padding-top: 30px;
+    width: 100%;
+    height: 45vh;
+    background-color: #29201A;
+}
+.footer-upper {
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+.footer-text {
+    color: #FFE7D5;
+    text-align: center; 
+    line-height: 2;
+}
+.social-media {
+    position: absolute;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-70%);
+    gap: 3px;
+}
+.footer-upper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.5px;
+    width: 100%;
+    background-color: #FFE7D5;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    font-family: 'EB Garamond';
+    font-weight: 100;
+    padding-left: 33%;
+    padding-right: 33%;
+    font-size: 15px;
+}
+
+.text-footer-bottom {
+    color: #FFE7D5;
+    background-color: #251D16;
+}
+#footer-title {
+    font-family: 'Comforter';
+    font-size: 60px;
+}
+#footer-logo {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translateX(-65%);
+}
