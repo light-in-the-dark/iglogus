@@ -88,7 +88,7 @@ a {
     top: 10%;
     left: 49%;
     transform:translateX(-50%);
-    background-image: url("./assets/images/Logo.png");
+    background-image: url("../assets/images/Logo.png");
     height: 180px;
     width: 180px;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ a {
 }
 .intro {
     height: 91.7vh;
-    background-image: url("./assets/images/intro-embroidery.jpg");
+    background-image: url("../assets/images/intro-knitting.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -174,7 +174,7 @@ a {
 }
 #scheme-upper-text {
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding-top: 3%;
     padding-left: 4%;
     padding-right: 40%;
@@ -189,7 +189,7 @@ a {
     border-radius: 50%;
     top: 10%; 
     right: 5%;
-    background-image: url("./assets/images/embroidery-scheme.jpg");
+    background-image: url("../assets/images/knitting-scheme.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -226,21 +226,19 @@ a {
 .scheme-lower {
     height: 55%;
 }
-.ideas {
+.videos {
     height: 100vh;
     position: relative;
 }
-.ideas-images-bg {
+.videos-images-bg {
     height: 80%;
-    background-color: #251D16;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+    background-image: url("../assets/images/knitting-video.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
 }
-.images-ideas {
-    object-fit: cover;
-    border-radius: 20px;
+.videos-images-bg:hover {
+    opacity: 0.8;
 }
 #image-1, #image-3 {
     margin-top: 2%;
@@ -248,7 +246,7 @@ a {
 #image-2, #image-4 {
     margin-bottom: 2%;
 }
-#ideas-button {
+#videos-button {
     position: absolute;
     left: 50%;
     bottom: 6%; 
@@ -276,7 +274,7 @@ a {
     position: relative;
     height: 70vh;
     width: 50%;
-    background-image: url("./assets/images/titles-embroidery.jpg");
+    background-image: url("../assets/images/titles-knitting.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -284,7 +282,7 @@ a {
     position: relative;
     height: 70vh;
     width: 50%;
-    background-image: url("./assets/images/shop-embroidery.jpg");
+    background-image: url("../assets/images/shop-knitting.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -88,7 +88,7 @@ a {
     top: 10%;
     left: 49%;
     transform:translateX(-50%);
-    background-image: url("./assets/images/Logo.png");
+    background-image: url("../assets/images/Logo.png");
     height: 180px;
     width: 180px;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ a {
 }
 .intro {
     height: 91.7vh;
-    background-image: url("./assets/images/intro-macrame.jpg");
+    background-image: url("../assets/images/intro-embroidery.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -154,6 +154,7 @@ a {
     left: 25%;
     top: 42%;
     background-color: #fff;
+    opacity: 0.8
 }
 #title-text {
     font-size: 1.4em;
@@ -175,7 +176,7 @@ a {
     color: #fff;
     font-size: 1.4em;
     padding-top: 3%;
-    padding-left: 6%;
+    padding-left: 4%;
     padding-right: 40%;
     line-height: 2;
     font-weight: 100;
@@ -188,7 +189,7 @@ a {
     border-radius: 50%;
     top: 10%; 
     right: 5%;
-    background-image: url("./assets/images/macrame-scheme.jpg");
+    background-image: url("../assets/images/embroidery-scheme.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -215,7 +216,7 @@ a {
     cursor: pointer;
 }
 #scheme-text {
-    padding-top: 17.5%;
+    padding-top: 18%;
     padding-left: 10%;
     font-family: 'Comfortaa';
     font-size: 1.4em;
@@ -225,21 +226,29 @@ a {
 .scheme-lower {
     height: 55%;
 }
-.videos {
-    position: relative;
+.ideas {
     height: 100vh;
+    position: relative;
 }
-.videos-image-bg {
+.ideas-images-bg {
     height: 80%;
-    background-image: url("./assets/images/macrame-video.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 1s;
+    background-color: #251D16;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
-.videos-image-bg:hover {
-    opacity: 0.8;
+.images-ideas {
+    object-fit: cover;
+    border-radius: 20px;
 }
-#videos-button {
+#image-1, #image-3 {
+    margin-top: 2%;
+}
+#image-2, #image-4 {
+    margin-bottom: 2%;
+}
+#ideas-button {
     position: absolute;
     left: 50%;
     bottom: 6%; 
@@ -267,7 +276,7 @@ a {
     position: relative;
     height: 70vh;
     width: 50%;
-    background-image: url("./assets/images/macrame-titles.jpg");
+    background-image: url("../assets/images/titles-embroidery.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -275,7 +284,7 @@ a {
     position: relative;
     height: 70vh;
     width: 50%;
-    background-image: url("./assets/images/macrame-shop.jpg");
+    background-image: url("../assets/images/shop-embroidery.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -88,7 +88,7 @@ a {
     top: 10%;
     left: 49%;
     transform:translateX(-50%);
-    background-image: url("./assets/images/Logo.png");
+    background-image: url("../assets/images/Logo.png");
     height: 180px;
     width: 180px;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ a {
 }
 .intro {
     height: 91.7vh;
-    background-image: url("./assets/images/intro-knitting.jpg");
+    background-image: url("../assets/images/intro-beading.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -174,9 +174,9 @@ a {
 }
 #scheme-upper-text {
     color: #fff;
-    font-size: 1.3em;
-    padding-top: 3%;
-    padding-left: 4%;
+    font-size: 1.4em;
+    padding-top: 4%;
+    padding-left: 5%;
     padding-right: 40%;
     line-height: 2;
     font-weight: 100;
@@ -189,7 +189,7 @@ a {
     border-radius: 50%;
     top: 10%; 
     right: 5%;
-    background-image: url("./assets/images/knitting-scheme.jpg");
+    background-image: url("../assets/images/scheme.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -226,19 +226,21 @@ a {
 .scheme-lower {
     height: 55%;
 }
-.videos {
+.ideas {
     height: 100vh;
     position: relative;
 }
-.videos-images-bg {
+.ideas-images-bg {
     height: 80%;
-    background-image: url("./assets/images/knitting-video.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: 1s;
+    background-color: #251D16;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
-.videos-images-bg:hover {
-    opacity: 0.8;
+.images-ideas {
+    object-fit: cover;
+    border-radius: 20px;
 }
 #image-1, #image-3 {
     margin-top: 2%;
@@ -246,7 +248,7 @@ a {
 #image-2, #image-4 {
     margin-bottom: 2%;
 }
-#videos-button {
+#ideas-button {
     position: absolute;
     left: 50%;
     bottom: 6%; 
@@ -274,7 +276,7 @@ a {
     position: relative;
     height: 70vh;
     width: 50%;
-    background-image: url("./assets/images/titles-knitting.jpg");
+    background-image: url("../assets/images/titles.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -282,7 +284,7 @@ a {
     position: relative;
     height: 70vh;
     width: 50%;
-    background-image: url("./assets/images/shop-knitting.jpg");
+    background-image: url("../assets/images/shop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

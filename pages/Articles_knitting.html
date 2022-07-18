@@ -98,7 +98,7 @@ a {
     top: 10%;
     left: 49%;
     transform:translateX(-50%);
-    background-image: url("./assets/images/Logo.png");
+    background-image: url("../assets/images/Logo.png");
     height: 180px;
     width: 180px;
     background-repeat: no-repeat;
@@ -133,24 +133,43 @@ a {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.title-support {
-    background-image: url("./assets/images/image-knitting.jpg");
+.title-content {
+    color: #ffffff;
+    background-image: url("../assets/images/newspapers.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh;
-    filter: brightness(50%);
-}
-    .text {
-    position: absolute;
+    text-align: center;
+    height: 20vh;
     font-family: 'Comfortaa';
     font-size: 3em;
-    font-weight: 200;
-    line-height: 1.5;
-    padding-top: 7%;
-    text-align: center;
-    color: #fff;
-    z-index: 1;
-    }
+    font-weight: 100;
+    padding-top: 3%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    font-family: 'Comfortaa';
+    font-size: 1.4em;
+}
+.content {
+    flex-grow: 1;
+    background-color: #29201A; 
+    position: relative; border-bottom: solid 1px #FFE7D5;
+
+}
+.link {
+    color: #ffffff;
+    position: absolute;
+    padding-top: 1.2%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+    font-weight: 100;
+}
+.link:hover {
+    color:#FFE7D5;
+}
 footer {
     padding-top: 30px;
     width: 100%;
@@ -216,7 +235,7 @@ footer {
           <nav class="navbar">
             <div class="nav-wrapper">
               <a class="nav-login" href="Account.html">Войти</a>
-              <div class="nav-name"></div>
+              <a href="../index.html"><div class="nav-name"></div></a>
               <div class="hamburger">
                 <span class="bar" style="background-color: #FFB27B"></span>
                 <span class="bar" style="background-color: #6F4D35"></span>
@@ -295,26 +314,31 @@ footer {
             </div>
           </nav>
         </header>
-        <script type="text/javascript" src="./scripts/index.js"></script>
-        <h2 class="text">Вы можете поддержать проект, поделившись ссылкой на наш сайт:)</h2>
-        <div class="title-support">
+        <script type="text/javascript" src="./scripts/app.js"></script>
+        <div>
+          <h2 class="title-content">Полезные статьи:</h2>
+          <div class="wrapper">
+          <div class="content"><a class="link" href="https://all-knitted.ru/жаккард-fair-isle/">Вязание в стиле жаккард</a></div>
+          <div class="content"><a class="link" href="https://iranta.net/post-o-vyazany/">Вязание</a></div>
+          <div class="content"><a class="link" href="https://zvetnoe.ru/club/poleznye-stati/vyazanie-dlya-nachinayushchikh/">Вязание для начинающих</a></div>
         </div>
-        <footer>
-          <div class="footer-upper">
-            <h2 class="footer-text" id="footer-title">Начните творить прямо сейчас</h2>
-            <img src="./assets/images/Logo-2.png" id="footer-logo" width="200px" height="50px"></img>
-            <div class="social-media">
-              <a href="https://m.facebook.com/login/?locale2=ru_RU"><img src="./assets/images/facebook.png" width="30px" height="30px"></a>
-              <a href="https://www.pinterest.ru/login/"><img src="./assets/images/pinterest.png" width="30px" height="30px"></a>
-              <a href="https://www.instagram.com/accounts/login/"><img src="./assets/images/instagram.png" width="30px" height="30px"></a>
-              <a href="https://www.youtube.com/account"><img src="./assets/images/youtube.png" width="30px" height="30px"></a>
-            </div>
+      </div>
+      <footer>
+        <div class="footer-upper">
+          <h2 class="footer-text" id="footer-title">Начните творить прямо сейчас</h2>
+          <img src="../assets/images/Logo-2.png" id="footer-logo" width="200px" height="50px"></img>
+          <div class="social-media">
+            <a href="https://m.facebook.com/login/?locale2=ru_RU"><img src="../assets/images/facebook.png" width="30px" height="30px"></a>
+            <a href="https://www.pinterest.ru/login/"><img src="../assets/images/pinterest.png" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/accounts/login/"><img src="../assets/images/instagram.png" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/account"><img src="../assets/images/youtube.png" width="30px" height="30px"></a>
           </div>
-          <div class="footer-bottom">
-            <a href="Support.html" class="text-footer-bottom">Поддержать нас</a>
-            <a href="policy.pdf" class="text-footer-bottom">Политика безопасности</a>
-          </div>
-         </footer>
+        </div>
+        <div class="footer-bottom">
+          <a href="Support.html" class="text-footer-bottom">Поддержать нас</a>
+          <a href="../policy.pdf" class="text-footer-bottom">Политика безопасности</a>
+        </div>
+       </footer>
         </div>
         </body>
         </html>
