@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
 
     //закрыть модальное окно
     $('.cd-user-modal').on('click', function (event) {
-        if ($(event.target).is($form_modal) || $(event.target).is('.cd-close-form')) {
+        if ($(event.target).is($form_modal) || $(event.target).is('.cd-close-form') || $(event.target).is('.floating-button')) {
             $form_modal.removeClass('is-visible');
         }
     });

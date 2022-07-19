@@ -5,7 +5,7 @@ var navbar = `<header class="header">
     <nav class="login-navbar">
       <li><a class="nav-login" id="accountname" href="#0">Аккаунт</a></li>
     </nav>
-    <a href="../Index.html"><div class="nav-name"></div></a>
+    <a href="Index.html"><div class="nav-name"></div></a>
     <div class="hamburger">
       <span class="bar" style="background-color: #FFB27B"></span>
       <span class="bar" style="background-color: #6F4D35"></span>
