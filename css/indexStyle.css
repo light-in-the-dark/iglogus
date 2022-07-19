@@ -597,6 +597,34 @@ footer {
   border-radius: 50em;
 }
 
+.floating-button {
+  
+  text-decoration: none;
+  display: block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+
+.floating-button:hover {
+  background: rgb(228, 190, 144);
+  box-shadow: 0 15px 20px rgba(228, 190, 144, .4);
+  color: white;
+  transform: translateY(-7px);
+}
+
 .cd-user-modal {
   position: fixed;
   top: 0;
@@ -676,8 +704,9 @@ footer {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  background: #d2d8d8;
-  color: #809191;
+  font-family: 'Comfortaa';
+  background: rgb(228, 190, 144, .4);
+  color: rgb(128, 145, 145);
 }
 
 .cd-user-modal-container .cd-switcher a.selected {
@@ -761,6 +790,7 @@ footer {
 }
 
 .cd-form input.full-width {
+  font-family: 'Comfortaa';
   width: 100%;
 }
 
@@ -819,6 +849,7 @@ footer {
   top: 0;
   padding: 6px 15px;
   border-left: 1px solid #d2d8d8;
+  font-family: 'Comfortaa';
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -916,6 +947,7 @@ footer {
 .cd-form-bottom-message {
   position: absolute;
   width: 100%;
+  font-family: 'Comfortaa';
   left: 0;
   bottom: -30px;
   text-align: center;
