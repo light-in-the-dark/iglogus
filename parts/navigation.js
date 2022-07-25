@@ -37,7 +37,7 @@ var navbar = `<header class="header">
           <a href="pages/Schemes_macrame.html" class="nav-link">Схемы</a>
         </li>
         <li class="nav-item">
-          <a href="pages/Lessons.html" class="nav-link">Видеоуроки</a>
+          <a href="https://www.youtube.com/c/OlOazis/playlists" class="nav-link">Видеоуроки</a>
         </li>
         <li class="nav-item">
           <a href="https://leonardo.ru/ishop/tree_1453399262/" class="nav-link">Магазин</a>
@@ -71,7 +71,7 @@ var navbar = `<header class="header">
           <a href="pages/Schemes_knitting.html" class="nav-link">Схемы</a>
         </li>
         <li class="nav-item">
-          <a href="pages/Lessons.html" class="nav-link">Видеоуроки</a>
+          <a href="https://www.youtube.com/channel/UCoPXM8JDQh0-pe64hWbXwPQ/videos" class="nav-link">Видеоуроки</a>
         </li>
         <li class="nav-item">
           <a href="https://leonardo.ru/ishop/tree_1444732062/" class="nav-link">Магазин</a>
@@ -165,10 +165,10 @@ var navbar = `<header class="header">
     </form>
 
     <p class="cd-form-bottom-message"><a href="#0">Вернуться к входу</a></p>
-  </div> 
+  </div>
   <a href="#0" class="cd-close-form">Закрыть</a>
-</div> 
-</div> 
+</div>
+</div>
 `
 function paste_username() {
   (!signin_username.value) ? (document.getElementById('accountname').innerHTML = "Аккаунт") : (document.getElementById('accountname').innerHTML = signin_username.value)
